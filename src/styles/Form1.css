@@ -1,0 +1,90 @@
+.PrincipalDiv{
+    border: 1px rgb(4, 176, 255) solid;
+    display: flex;
+    flex-flow: column ;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: rgba(118, 238, 238, 0.13);
+    border-radius: 1%;
+    min-width: 60vh;
+    min-height: 40vh;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.containerdescription1{
+    display: flex;
+    flex-direction: column wrap;
+}
+.divButtons{
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-evenly;
+    border: 2px rgb(236, 253, 0) solid;
+    padding: 20px;
+}
+.title1{
+    min-width: 60%;
+    font-size: 30px;
+}
+.description1{
+    font-size: 20px;
+    min-width: 80%;
+}
+.display-none{
+   opacity: 25%;
+   margin-bottom: 10px;
+}
+.count{
+    margin-bottom: 10px;
+    opacity: 50%;
+    animation-name: animation-count;
+    animation-duration: .1s;
+}
+@keyframes animation-count{
+    0%{
+        font-size: 20px;
+        opacity: 0;
+    }
+    100%{
+        font-size: 20px;
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 1300px){
+    .PrincipalDiv{
+        background-color: red;
+        min-width: 500px;
+        min-height: 500px;
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 768px){
+    .PrincipalDiv{
+        background-color: rgba(55, 0, 255, 0.39);
+        min-width: 40px;
+        min-height: 40px;
+        height: 100%;
+        width: 100%;
+        font-size: 30px;
+    }
+    .title1{
+        max-width: 100%;
+        font-size: 18px;
+    }
+
+    .divButtons ,.button{
+        padding: 10px;
+        max-width: 400px;
+        max-height: 200px;
+        min-height: 200px;
+        flex-flow: column;
+        justify-content: space-evenly;
+        align-self: center;
+        }
+    .description1{
+            font-size: 15px;
+            min-width: 80%;
+            max-width: 100%;
+     }
+}

@@ -1,0 +1,40 @@
+.task-card{
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 200px;
+    width: 500px;
+    border: 1px solid red;
+    align-items: center;
+    margin: 8px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    justify-content: space-evenly; 
+}
+h3{
+    font-size:25px ;
+    font-weight: bold;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+p{
+    font-size:20px;
+    word-break: break-word;
+}
+.task-card:first-child {
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .task-card{
+        background-color: rgba(255, 255, 255, 0.397);
+        min-height: 150px;
+        max-width: 400px;
+    }
+    h3{
+        font-size:22px ;
+    }
+    p{
+        font-size:15px;
+    }
+    
+}
